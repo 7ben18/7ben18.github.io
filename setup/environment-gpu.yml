@@ -1,0 +1,21 @@
+name: environment-gpu
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.11
+  - numpy
+  - ipykernel
+  - pandas
+  - requests
+  - python-dotenv
+  - lxml
+  - seaborn
+  - plotly
+  - nbformat=5.9.2
+  - pytorch=2.1.0
+  - pytorch-cuda=12.1
+  - lightning=2.1.2
+  - wandb
