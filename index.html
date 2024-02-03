@@ -1,382 +1,625 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-	<title>7ben18</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Site Metas -->
+<title>Ben</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/icon/favicon-32x32.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/icon/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body class="is-preload">
+<body id="page-top" class="politics_version">
 
-	<!-- Header -->
-	<div id="header">
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+            <div id="loader"></div>
+        </div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
 
-		<div class="top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <!--
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="images/icon/ben-logo.png" alt="" />
+		</a>
+        -->
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger active" href="#home">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Über mich</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#degree">Abschlüsse & Zertifikate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#testimonials">Referenzen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-			<!-- Logo -->
-			<div id="logo">
-				<!-- Profilbild unbedingt ändern!!! -->
-				<span class="image avatar48"><img src="images/Profilbild.png" alt="" /></span>
-				<h1 id="title">Si Ben Tran</h1>
-				<p>Data Scientist</p>
-			</div>
+    <section id="home" class="main-banner parallaxie" style="background: url('images/background/background.jpg')">
+        <div class="heading">
+            <h1>Hallo Ich bin Ben</h1>
+            <p>Wilkommen zu meinem digitalen Portfolio!<br>Schau dich herum und erfahre mehr über mich. <br> Seite in
+                Bearbeitung! </p>
+            <h3 class="cd-headline clip is-full-width">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Data Scientist</b>
+                    <b>Chemielaborant</b>
+                    <b>ML & DL Enthusiast</b>
+                    <b>Daten Jongleur</b>
+                    <b>Analytiker</b>
+                </span>
+            </h3>
+        </div>
+    </section>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
-					</li>
-					<li><a href="#about" id="about-link"><span class="icon solid fa-user">Über mich</span></a></li>
-					<li><a href="#berufserfahrung" id="berufserfahrung-link"><span
-								class="icon solid fa-briefcase">Berufserfahrung</span></a></li>
-					<li><a href="#ausbildung" id="ausbildung-link"><span
-								class="icon solid fa-graduation-cap">Ausbildung</span></a></li>
-					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Kontakt</span></a>
-					</li>
+    <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+        viewBox="0 0 85 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+        </path>
+    </svg>
 
-				</ul>
-			</nav>
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h2>Über mich</h2>
+                        <p>Ich bin 25 Jahre alt und studiere an der FHNW Data Science im letzten Semester. Ich habe eine
+                            Ausbildung als
+                            Chemielaborant am Paul Scherrer Instut abgeschlossen und habe mich danach für ein Studium
+                            entschieden, in denen ich Herausforderungen und Potentiall für eine spannende Zukunft sehe.
+                            Ich bin ein leidenschaftlicher Data Scientist, analysiere gerne Daten und trainiere Machine
+                            Learning sowie Deep Learning Modelle.
+                            Ich habe bereits einige Projekte in diesem Bereich
+                            durchgeführt und bin immer auf der Suche nach neuen Herausforderungen und Möglichkeiten, um
+                            meine Fähigkeiten und Kenntnisse zu erweitern.</p>
 
-		</div>
+                        <p>In meiner Freizeit geniesse ich die Gesellschaft mit meinen Freunden,
+                            bin sportlich aktiv in einem Ruderclub, snowboarde im Winter in den Bergen und spiele
+                            leidenschaftlich gerne Videospiele und sammle Pokemonkarten.</p>
 
-		<div class="bottom">
+                        <p>Als Data Science Student im letzten Semester, arbeite ich aktuell an meine Bachelor Thesis
+                            über das Thema:
+                            Adversarial Attacks - Wie kann KI überlistet werden?</p>
+                        <!-- Lebenslauf ändere! -->
+                        <a href="/docs/cv/dpo_A4_Lebenslauf_CH_Si_Ben_Tran.pdf" class="sim-btn btn-hover-new"
+                            data-text="Download CV"><span>Download CV</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
 
-			<!-- Social Icons -->
-			<ul class="icons">
-				<li><a href="https://github.com/7ben18" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/ben-t-7750b214a/" class="icon brands fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<!-- Google Drive Link
-							<li><a href="https://drive.google.com/drive/folders/1P8_UP5vo2fGdYUfENLLAGBOlZjRXN2le?usp=share_link"
-						class="icon brands fa-wpexplorer"><span class="label">Zeugnisse</span></a></li>
-				-->
-			</ul>
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="images/me/profilbild2.png" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
-		</div>
+    <div id="portfolio" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Portfolio</h3>
+                <p>Hier sind einige spannende Projekte an denen im Laufe meiner Data Science Bachelor an der FHNW
+                    gearbeitet habe. Diese reichen von klassischen Datenanalyse Projekte bis zum trainieren von Deep
+                    Learning Netzwerken.Jedes dieser Projekte ist einzigartigt und zeigt meine Fähigkeiten und Expertise
+                    in verschiedenen Data Science Bereichen.</p>
+            </div><!-- end title -->
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/7ben18/fhnw-cwm1-Steinschlagrisiko">
+                            <div class="post-thumb">
+                                <img src="images/projekte/cwm1.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Jan</span>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Steinschlagrisiko</h4>
+                            <p>Erhöhung der Sicherheitsmassnahmen für die Kantonsstrasse Schiers in Graubünden
+                                mittels Stein-schlagrisiko Analyse und Monte Carlo Simulationen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/7ben18/fhnw-pro2D-Kaffeeprojekt">
+                            <div class="post-thumb">
+                                <img src="images/projekte/pro2d.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Juni</span>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Kaffeechemie X Data Science</h4>
+                            <p>Chemische Kaffeeextraktionsanalyse mittels Data Science Methoden für die World Barista
+                                Championsship 2022.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/Immobilienrechner-Challenge">
+                            <div class="post-thumb">
+                                <img src="images/projekte/cml1.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Jan</span>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Immobilienrechner </h4>
+                            <p>Schweizer Hauspreis Vorhhersage mittels supervised Machine Learning Modellen sowie
+                                Klassifikation der Immobilienart.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="images/projekte/pro4d.png" class="img-fluid" alt="post-img" />
+                            <div class="date">
+                                <span>Juni</span>
+                                <span>2023</span>
+                            </div>
+                        </div>
+                        <div class="post-info">
+                            <h4>Kaffeevorlieben der Welt</h4>
+                            <p>Das Kaffee Konsumverhaltenden der Welt mit unsupervised Machine Learning analysieren. In
+                                Zusammenarbeit mit Partnerunternhemen der FHNW. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/CDL1-Sensor?view_as=public">
+                            <div class="post-thumb">
+                                <img src="images/projekte/cdl1.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Juni</span>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Sensor based Activity Recognition</h4>
+                            <p>Klassifikation der Bewegungsprofile anhand eigener aufgenommenen Daten und trainieren von
+                                Machine Learning sowie Deep Learning Modellen für Aktivitätsklassifikation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/san-projekt">
+                            <div class="post-thumb">
+                                <img src="images/projekte/san.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Dez</span>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Soziale Himmelskrieger</h4>
+                            <p>Soziale Netzwerk Analyse von Starwars Kriefer von erster bis siebter Triologie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a
+                            href="https://github.com/7ben18/fhnw-npr-Natural-Language-Processing/tree/main/mini-challenge1">
+                            <div class="post-thumb">
+                                <img src="images/projekte/npr-mc1.png" class="img-fluid" alt="post-img" href="" />
+                                <div class="date">
+                                    <span>Jan</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Multi Label Classifcation</h4>
+                            <p>Kaffee Konsumverhaltender Welt mit unsupervised Machine Learning analysieren</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="images/projekte/npr-mc2.png" class="img-fluid" alt="post-img" />
+                            <div class="date">
+                                <span>Jan</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="post-info">
+                            <h4>Contextual Learning bei Small Language Modells</h4>
+                            <p>Anwendung von Contextual Learning bei Small Language Modells, wie Phi-2, TinyLlama Chat
+                                und GPT-2.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/7ben18/fhnw-cx-Challenge-X">
+                            <div class="post-thumb">
+                                <img src="images/projekte/cx.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Jan</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Aktienpreise Vorhhersagen</h4>
+                            <p>Vorhhersage von Aktienmarkt mittels stochastische Prozessreihe und Deep Learning Modellen
+                                wie LSTM.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/7ben18/fhnw-aml-Angewandtes-Machine-Learning">
+                            <div class="post-thumb">
+                                <img src="images/projekte/aml.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Jan</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Produkt Affinitäts Modell</h4>
+                            <p>Erstellung eines Produkt Affinitäts Modelles für Tschechische Bank.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a
+                            href="https://github.com/7ben18/fhnw-npr-Natural-Language-Processing/tree/main/mini-challenge2">
+                            <div class="post-thumb">
+                                <img src="images/projekte/del-mc2.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Jan</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Image Captioning Modell</h4>
+                            <p>Nachimplementierung vom Show and Tell Paper für Image Captioning. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/dlbs-challenge">
+                            <div class=" post-thumb">
+                                <img src="images/projekte/dlbs.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Juni</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Temperatur Vorhhersage</h4>
+                            <p>Temperatur Vorhhersage um die Sicherheit des Flughafen Zürich zu erhöhen, mittels
+                                Recurent Neurnale Netze wie LSTM (in Bearbeitung)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <a href="https://github.com/7ben18/fhnw-rle-Reinforcement-Learning">
+                            <div class="post-thumb">
+                                <img src="images/projekte/rle.png" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>Juni</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="post-info">
+                            <h4>Reinforcment Learning</h4>
+                            <p>Implement an reinforcment learning agent based on Q-Learning for Ataria Space Ship game
+                                (in Bearbeitung)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="images/projekte/bat.png" class="img-fluid" alt="post-img" />
+                            <div class="date">
+                                <span>Sept</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="post-info">
+                            <h4>Adverserial Attack</h4>
+                            <p>Adverserial Attacks - Wie kann KI überlistet werden? (In Bearbeitung)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="images/projekte/future.png" class="img-fluid" alt="post-img" />
+                            <div class="date">
+                                <span>Open</span>
+                                <span>End</span>
+                            </div>
+                        </div>
+                        <div class="post-info">
+                            <h4>Zukunftsprojekte</h4>
+                            <p>Zukünftige Weitere Projekte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	</div>
+    <div id="degree" class="section wb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Abschlüsse & Zertifikate</h3>
+                <p>Hier findest du eine umfassende Liste meiner akademischen und beruflichen Zertifikate und
+                    abgeschlossenen Kurse, die meine Bereitschaft zur kontinuierlichen Weiterbildung und persönlichen
+                    Entwicklung zeigen.</p>
+            </div><!-- end title -->
 
-	<!-- Main -->
-	<div id="main">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-lg-7">
+                    <h2>Degrees</h2>
+                    <ul>- EFZ als Chemielaborant Fachrichtung Analytik</ul>
+                    <ul>- Bachelor of Science in Data Science (FHNW)</ul>
+                    <ul>- Competency in Computer Science EFZ specializing in application development</ul>
+                    <ul>- Commercial Vocational Baccalaureate</ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-lg-2">
+                    <h2>Languages</h2>
+                    <ul>- Deutsch</ul>
+                    <ul>- Vietnamesisch </ul>
+                    <ul>- Englisch</ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-lg-6" style="padding-top: 50px;">
+                    <h2>Courses</h2>
+                    <ul>- Machine Learning (Coursera)</ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- Intro -->
-		<section id="top" class="one dark cover">
-			<div class="container">
+    <div id="testimonials" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Referenzen</h3>
+            </div>
 
-				<header>
-					<h2 class="alt"><strong>Hi, I'm Ben,</strong>
-						<p>Aspiring Data Scientist<br />
-				</header>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Pokemon</h3>
+                                <p class="lead">Ben habe ich als Pokemonsüchtiger Mensch wahrgenommen.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/testimonials/fabian-koehler.png" alt="" class="img-fluid alignleft">
+                                <h4>Dr. Fabian Köhler<small>Paul Scherrer Institut</small></h4>
+                            </div>
+                        </div>
 
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Kulturbanause</h3>
+                                <p class="lead">Ben - Kulturbanause</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/testimonials/andreas-brand.png" class="img-fluid alignleft">
+                                <h4>Dr. Andreas Brand<small>Paul Scherrer Institut</small></h4>
+                            </div>
+                        </div>
 
-			</div>
-		</section>
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Kulturbanause</h3>
+                                <p class="lead">Ben - Kulturbanause</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/testimonials/luu.png" class="img-fluid alignleft">
+                                <h4>Lukas Zemp<small>Data Scientist @ Baloise</small></h4>
+                            </div>
+                        </div>
 
-		<!-- Portfolio -->
-		<section id="portfolio" class="two">
-			<div class="container">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Fellow Data Science Student</h3>
+                                <p class="lead">Ben habe ich als eine Banause wahrgenommen.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/testimonials/gabu.png" alt="" class="img-fluid alignleft">
+                                <h4>Gabriel Gamez Torres<small>Data Scientist & Software Engineer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
 
-				<header>
-					<h2>Portfolio</h2>
-				</header>
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
-				<p>Diese Website dient als Übersicht über alle meine spannenden und
-					interessanten Projekte und Herausforderungen,
-					an denen ich als Data Science Student an der FHNW
-					mitgewirkt habe. <br />
-					Einige Projekte davon sind noch in Bearbeitung und werden zu einem späteren
-					Zeitpunkt freigeschlatet.
-					Falls es doch an einigen Projekten Interesse besteht, können Sie mich gerne via E-Mail kontaktieren.
-				</p>
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Kontakt</h3>
+                <p>Danke für dein Interesse an meiner Peron! Falls du Fragen hast oder mit mir in Kontakt treten
+                    möchtest, fülle
+                    bitte das Formular aus und ich werde mich so schnell wie möglich bei dir melden.</p>
+            </div><!-- end title -->
 
-				<!-- Steinschlagrisiko -->
-				<div class="row">
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/7ben18/fhnw-cwm1-Steinschlagrisiko" class="image fit"><img
-									src="images/rockfall.png" alt="" /></a>
-							<header>
-								<h3>Steinschlagrisiko Analyse mittels Monte Carlo Simulation für die Kantonsstrasse in
-									Schiers GR</h3>
-							</header>
-						</article>
-					</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" type="text" placeholder="Your Name"
+                                            required="required"
+                                            data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" type="email" placeholder="Your Email"
+                                            required="required"
+                                            data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone"
+                                            required="required"
+                                            data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="Your Message"
+                                            required="required"
+                                            data-validation-required-message="Please enter a message."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button id="sendMessageButton" class="sim-btn btn-hover-new"
+                                        data-text="Send Message" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
-					<!-- Kaffeeprojekt -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/7ben18/fhnw-pro2D-Kaffeeprojekt" class="image fit"><img
-									src="images/p2.png" alt="" /></a>
-							<header>
-								<h3>Analyse von chemischen Kaffeeextraktionsrohdaten für die World Barista
-									Championship 2022</h3>
-							</header>
-						</article>
-					</div>
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2024 <a href="#">Si Ben Tran | </a>
+                        <a href="https://www.linkedin.com/in/ben-t-7750b214a/">LinkedIn | </a>
+                        <a href="https://github.com/7ben18">GitHub | </a>
+                    </p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
 
-					<!-- Immobilienrechner -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/Immobilienrechner-Challenge" class="image fit"><img
-									src="images/cml1.png" alt="" /></a>
-							<header>
-								<h3>Schweizer Hauspreis Vorhersage mittels supervised Machine Learning Modellen
-									<a href=#>immoprice.ch</a>
-								</h3>
-							</header>
-						</article>
-					</div>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-					<!-- Deep Learning -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="" class="image fit"><img src="images/p4.png" alt="" /></a>
-							<header>
-								<h3>Kaffee Konsumverhalten der Welt mit unsupervised Machine Learning analysieren<br\>
-
-								</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- Projekt oder Challenge -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/CDL1-Sensor?view_as=public" class="image fit"><img
-									src="images/cdl1.png" alt="" /></a>
-							<header>
-								<h3>Sensor based Activity Recognition mit RNN & LSTM<br\>
-								</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- 5. Semester -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href=# class="image fit"><img src="images/stock-market-prediction-image.png"
-									alt="" /></a>
-							<header>
-								<h3>Stock Market Prediction mit Transformer (in progress - HS23)</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- Deep Learning -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/7ben18/fhnw-npr-Natural-Language-Processing/tree/main/mini-challenge1"
-								class="image fit"><img src="images/mutli-class-genre-classification.png" alt="" /></a>
-							<header>
-								<h3>Multi-Class Genre Klassifikation von Bücher mittels ML & Transformer (in progress -
-									HS23)<br\>
-								</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- Projekt oder Challenge -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/dlbs-challenge" class="image fit"><img
-									src="images/temperatur-forcast.png" alt="" /></a>
-							<header>
-								<h3>Temperatur Vorhersage für den Flughafen Zürich (in progress - HS23)<br\>
-								</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- 5. Semester -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/san-projekt" class="image fit"><img
-									src="images/social-network-starwars.png" alt="" /></a>
-							<header>
-								<h3>Soziale Netzwerk Analyse von Starwars Charakteren (in progress - HS23)</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- Deep Learning -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/7ben18/fhnw-rle-Reinforcement-Learning" class="image fit"><img
-									src="images/rle.png" alt="" /></a>
-							<header>
-								<h3>Reinforcement Learning mittels Deep Q-Learning (in progress - HS23)<br\>
-								</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- Projekt oder Challenge -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="" class="image fit"><img src="images/del-mc2.png" alt="" /></a>
-							<header>
-								<h3>Image Captioning - Show and Tell - Paper Implementation (in progress - HS23)<br\>
-								</h3>
-							</header>
-						</article>
-					</div>
-
-					<!-- 5. Semester -->
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="https://github.com/7ben18/fhnw-aml-Angewandtes-Machine-Learning"
-								class="image fit"><img src="images/aml.png" alt="" /></a>
-							<header>
-								<h3>Modellierung der Produktaffinität für potentielle Kreditkartenkäufer (in progress -
-									HS23)</h3>
-							</header>
-						</article>
-					</div>
-					</header>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<!-- About Me -->
-		<section id="about" class="three">
-			<div class="container">
-
-				<header>
-					<h2>Über mich</h2>
-				</header>
-
-				<!-- <a href="#" class="image featured"><img src="images/banner.jfif" alt="" /></a>  -->
-
-				<p>
-					Dynamischer Data Scientist mit Erfahrung und Kenntnissen in diversen Machine Learning und Deep
-					Learning Projekten.
-					Drei Jahre Berufserfahrung als analytischer Chemielaborant.
-					Bereit für neue Herausforderungen.</p>
-
-				<!-- Dynamic Data Scientist with experience and knowledge in Personal Purchase 
-								Recommendations, Medical Diagnosis, Self-Driving Cars, Stock Market Trading 
-								and Online Marketing. Freshly graduated Master's degree from FHNW in 
-								Data Science with 3 years of work experience as a chemical lab technician 
-								specializing in analytics and an internship of several months as a Data Scientist. 
-								I am looking forward to apply the acquired skills in a challenging Data Science 
-								department. 
-							-->
-
-
-
-				<!-- <div class="video-container"> -->
-				<!--	<iframe -->
-				<!--	src="https://www.youtube.com/embed/ok4cdbKJrjg" -->
-				<!--	frameborder="0" -->
-				<!--	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" -->
-				<!--	allowfullscreen> -->
-				<!--	</iframe> -->
-				<!-- </div> -->
-
-			</div>
-
-			<!-- Berufserfahrung -->
-			<section id="berufserfahrung" class="four">
-				<div class="container">
-
-					<header>
-						<h2>Berufserfahrung</h2>
-					</header>
-
-					<p>
-						Radioanalytischer Chemielaborant <br />
-						Paul Scherrer Institut <br />
-						November 2019 – August 2021 <br />
-					</p>
-
-					<p>
-						Militärdienst <br />
-						Infanterie Schule 11/3 Neuchlen <br />
-						Mai 2019 – Oktober 2019
-					</p>
-
-					<p>
-						Pharmazeutischer Chemielaborant <br />
-						Dr. Heinz Welti AG <br />
-						August 2018 – April 2019
-					</p>
-
-
-				</div>
-			</section>
-
-
-			<!-- Ausbildung -->
-			<section id="ausbildung" class="four">
-				<div class="container">
-
-					<header>
-						<h2>Ausbildung</h2>
-					</header>
-
-					<p>Bachelorstudium in Data Science <br />
-						Fachhochschule Nordwestschweiz in Brugg-Windisch <br />
-						September 2021 – Heute <br />
-					</p>
-
-					<p>
-						Lehre als Chemielaborant in Fachrichtung Analytik <br />
-						Paul Scherrer Institut <br />
-						August 2015 – Juli 2018
-					</p>
-
-				</div>
-			</section>
-
-			<!-- Ausbildung -->
-			<section id="contact" class="four">
-				<div class="container">
-
-					<header>
-						<h2>Kontakt</h2>
-					</header>
-
-					<p>siben.tran@students.fhnw.ch</p>
-
-				</div>
-			</section>
-
-	</div>
-
-	<!-- Footer -->
-	<div id="footer">
-
-		<!-- Copyright -->
-		<!-- <ul class="copyright">
-						<li>&copy; </li>
-					</ul> -->
-
-		<p>
-			Website Template: HTML5 UP + Ben Tran
-			<br />
-			letztes update: 27.11.2023
-		</p>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- Camera Slider -->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/headline.js"></script>
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
 
 </body>
 
