@@ -328,7 +328,7 @@
                                 <img src="images/projekte/del-mc2.png" class="img-fluid" alt="post-img" />
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-status">Jan 2024</div>
-                                    <i class="fa fa-github portfolio-github"></i>
+                                    <i class="fa fa-github portschätze folio-github"></i>
                                 </div>
                             </div>
                         </a>
@@ -761,6 +761,7 @@
 
                         <div class="testimonial-card">
                             <div class="testimonial-header">
+                                <i class="fa fa-graduation-cap testimonial-header-icon"></i>
                                 <h3>Lernender</h3>
                             </div>
                             <div class="testimonial-content clearfix">
@@ -780,6 +781,7 @@
 
                         <div class="testimonial-card">
                             <div class="testimonial-header">
+                                <i class="fa fa-trophy testimonial-header-icon"></i>
                                 <h3>Ausdauer & Disziplin</h3>
                             </div>
                             <div class="testimonial-content clearfix">
@@ -802,6 +804,7 @@
 
                         <div class="testimonial-card">
                             <div class="testimonial-header">
+                                <i class="fa fa-lightbulb-o testimonial-header-icon"></i>
                                 <h3>Eigeninitiative</h3>
                             </div>
                             <div class="testimonial-content clearfix">
@@ -823,6 +826,7 @@
 
                         <div class="testimonial-card">
                             <div class="testimonial-header">
+                                <i class="fa fa-users testimonial-header-icon"></i>
                                 <h3>Teamarbeit</h3>
                             </div>
                             <div class="testimonial-content clearfix">
@@ -843,6 +847,7 @@
 
                         <div class="testimonial-card">
                             <div class="testimonial-header">
+                                <i class="fa fa-group testimonial-header-icon"></i>
                                 <h3>Teamorientiert</h3>
                             </div>
                             <div class="testimonial-content clearfix">
@@ -869,10 +874,13 @@
         <div class="container">
             <div class="section-title text-left">
                 <h3>Kontakt</h3>
-                <p>Vielen Dank für dein Interesse an meiner Person! Wenn du Fragen hast oder gerne mit mir in Kontakt
-                    treten möchtest, kannst du mir eine E-Mail an die folgende Adresse senden: <br>
-                    si_ben_tran@hotmail.com
-                </p>
+                <p>Vielen Dank für dein Interesse an meinem Portfolio! Ich freue mich über jede Nachricht und bin
+                    gespannt auf neue berufliche Möglichkeiten und spannende Projekte.
+                <p>Gerne können wir uns auch über <a href="https://www.linkedin.com/in/7ben18/" target="_blank"
+                        style="color: #636363; text-decoration: none; font-weight: 600;">LinkedIn</a> vernetzen und dort
+                    uns Austauschen.
+                    <br><br>
+                    📧 E-Mail: <strong>si_ben_tran@hotmail.com</strong>
             </div>
             <!--Kontakt Adresse
             <div class="row">
@@ -1265,7 +1273,7 @@
             transition: all 0.3s ease;
             border: 1px solid #e0e6ed;
             margin: 0 10px;
-            height: 400px;
+            height: 450px;
             overflow: hidden;
         }
 
@@ -1279,6 +1287,12 @@
             color: white !important;
             padding: 20px;
             text-align: center;
+        }
+
+        .testimonial-header-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: block;
         }
 
         .testimonial-header h3 {
@@ -1296,8 +1310,11 @@
         }
 
         .testimonial-desc {
-            flex: 1;
+            height: 180px;
             margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
 
         .quote-icon {
@@ -1321,14 +1338,19 @@
             margin-top: auto;
             padding-top: 15px;
             border-top: 1px solid #e0e6ed;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
         }
 
         .testimonial-meta img.alignleft {
             float: left;
             margin-right: 15px;
-            width: auto;
-            height: auto;
-            max-width: 80px;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
         }
 
         .testimonial-meta h4 {
@@ -1484,6 +1506,11 @@
             align-items: center;
             justify-content: center;
             min-height: 370px;
+            transition: all 0.3s ease;
+        }
+
+        .profile-image-container:hover {
+            transform: translateY(-10px);
         }
 
         .about-profile-img {
@@ -1492,6 +1519,12 @@
             border-radius: 15px;
             object-fit: cover;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .profile-image-container:hover .about-profile-img {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
         }
 
         /* Card specific gradients */
@@ -1536,7 +1569,7 @@
         .cv-download-btn {
             display: inline-flex;
             align-items: center;
-            background: linear-gradient(135deg, #424242 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #636363 0%, #2c2c2c 100%);
             color: white !important;
             padding: 12px 25px;
             border-radius: 8px;
@@ -1549,7 +1582,7 @@
         }
 
         .cv-download-btn:hover {
-            background: linear-gradient(135deg, #525252 0%, #8a5cb2 100%);
+            background: linear-gradient(135deg, #757575 0%, #424242 100%);
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             color: white !important;
