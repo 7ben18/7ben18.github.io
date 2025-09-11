@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Site Metas -->
+<title>Ben</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/icon/favicon-32x32.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/icon/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<script src="js/modernizr.js"></script>
+
+</head>
+
+<body id="page-top" class="politics_version">
+    <div id="preloader">
+        <div id="main-ld">
+            <div id="loader"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger active" href="#home">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Über mich</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#degree">Abschlüsse & Zertifikate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#testimonials">Referenzen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                    </li>
+                    <li class="nav-item auth-status-nav">
+                        <a class="nav-link auth-status-btn locked" id="navAuthStatus" href="#"
+                            onclick="handleAuthButtonClick()">
+                            <i class="fa fa-lock auth-icon"></i>
+                            <span class="auth-text">Portfolio entsperren</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="main-banner parallaxie">
+        <div class="heading">
+            <h1>Hallo Ich bin Ben</h1>
+            <p>Wilkommen zu meinem digitalen Portfolio!<br>Schau dich um und erfahre mehr über mich.</p>
+            <h3 class="cd-headline clip is-full-width">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Data Scientist</b>
+                    <b>Data Analyst</b>
+                    <b>Data Engineer</b>
+                    <b>Daten Jongleur</b>
+                </span>
+            </h3>
+        </div>
+    </section>
+
+    <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+        viewBox="0 0 85 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+        </path>
+    </svg>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Über mich</h3>
+            </div>
+
+            <div class="row">
+                <!-- Profile Image -->
+                <div class="col-md-6 mb-4">
+                    <div class="profile-image-container">
+                        <img src="images/me/profilbild2.png" alt="Ben Profile" class="about-profile-img">
+                    </div>
+                </div>
+
+                <!-- Info Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="about-card info-card">
+                        <div class="card-header">
+                            <i class="fa fa-info-circle card-icon"></i>
+                            <h4>Auf einen Blick</h4>
+                        </div>
+                        <div class="card-content">
+                            <ul class="info-list">
+                                <li>Daten Jongleur</li>
+                                <li>26 Jahre alt</li>
+                                <li>Risk Data Analyst/Engineer @ Baloise Asset Management</li>
+                                <li>Data Science Bachelor @ FHNW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="about-card education-card">
+                        <div class="card-header">
+                            <i class="fa fa-graduation-cap card-icon"></i>
+                            <h4>Bildungsweg</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Mein Bildungsweg begann mit einer soliden analytischen Grundlage als Chemielaborant EFZ
+                                mit Schwerpunkt analytische Chemie. Nach erfolgreichen Erfahrungen bei Dr. H. Welti AG
+                                und am Paul Scherrer entschied ich mich für den bewussten Wechsel zur
+                                digitalen Datenanalyse. Der bewusste Wechsel von der Analyse chemischer Substanzen zur
+                                digitalen Datenanalyse ermöglichte es mir, meine analytischen Fähigkeiten erfolgreich in
+                                ein modernes, digitales Umfeld zu transferieren.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="about-card career-card">
+                        <div class="card-header">
+                            <i class="fa fa-briefcase card-icon"></i>
+                            <h4>Berufliche Laufbahn</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Seit September 2024 arbeite ich als Risk Data Analyst/Engineer bei der Baloise Asset
+                                Management in Basel. In dieser Position entwickle ich komplexe ETL-Pipelines und
+                                erstelle interne Risk-Dashboards für Liquidity Risk, einschliesslich Counterparty Risk
+                                und Client Concentration Risk. Dabei implementiere ich sowohl Backend-Datenworkflows als
+                                auch Frontend-Dashboard-Interfaces und entwickelte erfolgreich automatisierte
+                                Datenpipelines für Bond Analytics und Management Information System Dashboards. Diese
+                                Erfahrungen im Finanzsektor ermöglichen es mir, meine theoretischen Kenntnisse aus dem
+                                Studium Data
+                                Science in einem anspruchsvollen Unternehmensumfeld erfolgreich anzuwenden.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="about-card future-card">
+                        <div class="card-header">
+                            <i class="fa fa-rocket card-icon"></i>
+                            <h4>Zukunftspläne</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Da mein befristeter Vertrag bei der Baloise Asset Management Ende 2025 ausläuft, suche
+                                ich aktiv nach neuen beruflichen Herausforderungen, die meinem Anspruch an
+                                kontinuierliche
+                                Weiterentwicklung entsprechen. Langfristig plane ich auch einen Master zu absolvieren,
+                                um
+                                meine Expertise weiter zu vertiefen und zukunftsorientierte Kompetenzen aufzubauen. Ich
+                                freue mich darauf, meine analytischen Fähigkeiten und meine Leidenschaft der Data
+                                Science, Data Analytics und Data Engineering
+                                in einem neuen, innovativen Umfeld einzusetzen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="about-card personal-card">
+                        <div class="card-header">
+                            <i class="fa fa-heart card-icon"></i>
+                            <h4>Persönliches</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>In meiner Freizeit schätze ich die Balance zwischen sozialen Kontakten und persönlichen
+                                Interessen. Ich geniesse Zeit mit Freunden, bin sportlich aktiv und snowboarde im Winter
+                                gerne in den Bergen. Zur Entspannung widme ich mich dem Gaming und sammle Pokémonkarten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CV Download Card (Full Width) -->
+                <div class="col-md-12 mb-4">
+                    <div class="about-card cv-card">
+                        <div class="card-header">
+                            <i class="fa fa-file-text-o card-icon"></i>
+                            <h4>Interessiert an meinen Details?</h4>
+                        </div>
+                        <div class="card-content cv-content">
+                            <p>Lade meinen vollständigen Lebenslauf herunter und erfahre mehr über meine detaillierten
+                                Qualifikationen, Projekterfahrungen und beruflichen Stationen. CV und alle Zertifikate
+                                sind
+                                mit einem Master-Passwort geschützt. Für den Vollzugang zu meinem Portfolio kontaktiere
+                                mich
+                                gerne unter: si_ben_tran@hotmail.com</p>
+                            <a href="#" onclick="downloadCV()" class="cv-download-btn">
+                                <i class="fa fa-download"></i>
+                                <span>Lebenslauf herunterladen</span>
+                                <i class="fa fa-lock secure-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Portfolio</h3>
+                <p>Während meines Bachelorstudiums in Data Science an der FHNW und in meiner Berufstätigkeit
+                    als Risk Data Analyst/Engineer bei der Baloise Asset Management habe ich an einer Vielzahl
+                    spannender
+                    Projekte gearbeitet. Diese Projekte erstrecken sich von klassischen Datenanalysen bis hin zum
+                    Training von Deep Learning Modellen sowie der Entwicklung produktiver ETL-Pipelines und
+                    Risk-Dashboards.
+                    Jedes dieser Projekte ist einzigartig und demonstriert meine Fähigkeiten und Expertise in
+                    verschiedenen
+                    Bereichen der Data Science, Data Analytics und Data Engineering.</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/projekte/future.png" class="img-fluid" alt="post-img" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-status in-progress">Open End</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Zukunftsprojekte</h4>
+                                <i class="fa fa-lightbulb-o portfolio-icon"></i>
+                            </div>
+                            <p>Für zukünftige, spannende und innovative Projekte bin ich offen und stehe auch für
+                                Kooperationen mit Unternehmen zur Verfügung.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/projekte/bam.png" class="img-fluid" alt="post-img" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-status">Sep 2024 - Dez 2025</div>
+                                <div class="portfolio-nda">
+                                    <i class="fa fa-shield"></i>
+                                    <span>NDA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>BAM ONE</h4>
+                                <i class="fa fa-line-chart portfolio-icon"></i>
+                            </div>
+                            <p>Mitentwicklung am Risiko Dashboard <br> Baloise Asset Management <br> Open Network
+                                Experience <br> im Backend und Frontend.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/AdversarialAttacks" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/bat.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Feb 2024 - Sept 2024</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Adversarial Attack</h4>
+                                <i class="fa fa-shield portfolio-icon"></i>
+                            </div>
+                            <p>Bachelorarbeit Data Science @ FHNW mit Gabriel Gamez Torres: Adversarial Attacks - Wie
+                                kann KI überlistet werden?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/dlbs-challenge" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/dlbs.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2023 - Feb 2024</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Temperatur Vorhersage</h4>
+                                <i class="fa fa-sun-o portfolio-icon"></i>
+                            </div>
+                            <p>Temperatur Vorhersage um die Sicherheit des Flughafen Zürich zu erhöhen, mittels
+                                Recurrent Neural Networks wie LSTM & Autoformer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/7ben18/fhnw-del-Deep-Learning/tree/main/del-Minichallenge-2"
+                            target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/del-mc2.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2023 - Jan 2024</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Show & Tell Implementation</h4>
+                                <i class="fa fa-eye portfolio-icon"></i>
+                            </div>
+                            <p>Umsetzung eines Neural Image Captioning Modells basierend auf dem Show & Tell Paper.
+                                Anwendung von Pytorch-Lightning und Weights & Bias.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/7ben18/fhnw-aml-Angewandtes-Machine-Learning" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/aml.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2023 - Jan 2024</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Produkt Affinitäts Modell</h4>
+                                <i class="fa fa-bank portfolio-icon"></i>
+                            </div>
+                            <p>Erstellung mehrere Produkt Affinitäts Modelle auf Basis transaktioneller Daten der
+                                Tschechische Bank mit Machine Learning in R.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/projekte/cx.png" class="img-fluid" alt="post-img" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-status">Sep 2023 - Jan 2024</div>
+                                <div class="portfolio-nda">
+                                    <i class="fa fa-shield"></i>
+                                    <span>NDA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Aktienpreise Vorhersagen</h4>
+                                <i class="fa fa-line-chart portfolio-icon"></i>
+                            </div>
+                            <p>Vorhersage von NASDAQ-100 Aktien mittels stochastischer Prozessreihe ARIMA und Recurrent
+                                Neural Networks LSTM.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/7ben18/fhnw-npr-Natural-Language-Processing/tree/main/mini-challenge2"
+                            target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/npr-mc2.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2023 - Dez 2023</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Contextual Learning bei SLM</h4>
+                                <i class="fa fa-comments portfolio-icon"></i>
+                            </div>
+                            <p>Erstellung eines Chatbot durch Contextual Learning mit Small Language Models wie Phi-2,
+                                TinyLlama Chat und GPT-2.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/7ben18/fhnw-npr-Natural-Language-Processing/tree/main/mini-challenge1"
+                            target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/npr-mc1.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2023 - Dez 2023</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Multi Label Classification</h4>
+                                <i class="fa fa-tags portfolio-icon"></i>
+                            </div>
+                            <p>Multi Label Klassifikation von Bücher-Genres mit Machine & Deep Learning auf Basis von
+                                Textbearbeitung mit Natural Language Processing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/san-projekt" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/san.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2023 - Dez 2023</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Soziale Himmelskrieger</h4>
+                                <i class="fa fa-users portfolio-icon"></i>
+                            </div>
+                            <p>Anwendung der sozialen Netzwerkanalyse auf die Interaktionen zwischen den Star
+                                Wars-Kriegern in den ersten sieben Filmen der Saga.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/CDL1-Sensor?view_as=public" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/cdl1.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Feb 2023 - Juni 2023</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Sensor Activity Recognition</h4>
+                                <i class="fa fa-mobile portfolio-icon"></i>
+                            </div>
+                            <p>Trainieren von Machine & Deep Learning Modellen für die Klassifikation von
+                                aufgezeichneten Bewegungsprofilen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/projekte/pro4d.png" class="img-fluid" alt="post-img" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-status">Feb 2023 - Juni 2023</div>
+                                <div class="portfolio-nda">
+                                    <i class="fa fa-shield"></i>
+                                    <span>NDA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Kaffeevorlieben der Welt</h4>
+                                <i class="fa fa-coffee portfolio-icon"></i>
+                            </div>
+                            <p>Kaffee Konsumverhalten der Welt mit unsupervised Machine Learning analysieren in
+                                Zusammenarbeit mit Partnerunternehmen der FHNW.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/Immobilienrechner-Challenge" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/cml1.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2022 - Jan 2023</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Immobilienrechner</h4>
+                                <i class="fa fa-home portfolio-icon"></i>
+                            </div>
+                            <p>Schweizer Hauspreis Vorhersage mittels supervised Machine Learning Modellen sowie
+                                Klassifikation der Immobilienart.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/7ben18/fhnw-pro2D-Kaffeeprojekt" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/pro2d.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Feb 2022 - Juni 2022</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Kaffeechemie X Data Science</h4>
+                                <i class="fa fa-flask portfolio-icon"></i>
+                            </div>
+                            <p>Chemische Kaffeeextraktionsanalyse mittels Data Science Methoden für die World Barista
+                                Championship 2022.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/7ben18/fhnw-cwm1-Steinschlagrisiko" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/cwm1.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2021 - Jan 2022</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>Steinschlagrisiko</h4>
+                                <i class="fa fa-warning portfolio-icon"></i>
+                            </div>
+                            <p>Erhöhung der Sicherheitsmassnahmen für die Kantonsstrasse Schiers in Graubünden mittels
+                                Steinschlagrisiko-Analyse und Monte Carlo Simulationen.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="degree" class="section wb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Abschlüsse & Zertifikate</h3>
+                <p>Hier findest du eine umfassende Liste meiner akademischen und beruflichen Zertifikate und
+                    abgeschlossenen Kurse, die meine Bereitschaft zur kontinuierlichen Weiterbildung und persönlichen
+                    Entwicklung zeigen. <br> <i class="fa fa-lock"></i> Alle Dokumente sind mit Master-Passwort
+                    geschützt.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <!-- Arbeitszeugnisse Card - Oben Links -->
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-4">
+                    <div class="certificate-card">
+                        <div class="card-header">
+                            <i class="fa fa-briefcase certificate-icon"></i>
+                            <h3>Arbeitszeugnisse</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('arbeitszeugnis')">
+                                    <i class="fa fa-building"></i>
+                                    <span>Arbeitszeugnise</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('letztes_arbeitszeugnis')">
+                                    <i class="fa fa-file-text"></i>
+                                    <span>Letztes Arbeitszeugnis</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B.Sc Data Science Card - Oben Rechts -->
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-4">
+                    <div class="certificate-card">
+                        <div class="card-header">
+                            <i class="fa fa-university certificate-icon"></i>
+                            <h3>B.Sc. Data Science @ FHNW</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('diplom_bsc')">
+                                    <i class="fa fa-certificate"></i>
+                                    <span>Diplom</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('ranking_bsc')">
+                                    <i class="fa fa-trophy"></i>
+                                    <span>Ranking</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('ehrenamtlich_bsc')">
+                                    <i class="fa fa-heart"></i>
+                                    <span>Ehrenamtlich</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lehrzeugnis Card - Unten Links -->
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-4">
+                    <div class="certificate-card">
+                        <div class="card-header">
+                            <i class="fa fa-graduation-cap certificate-icon"></i>
+                            <h3>Lehrzeugnis</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('lehrzeugnis_psi')">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <span>Lehrzeugnis PSI</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('faehigkeitszeugnis')">
+                                    <i class="fa fa-certificate"></i>
+                                    <span>Eidgenössisches Fähigkeitszeugnis</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('berufsmaturitaetszeugnis')">
+                                    <i class="fa fa-trophy"></i>
+                                    <span>Berufsmaturitätszeugnis</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kurszertifikate Card - Unten Rechts -->
+                <div class="col-md-6 col-sm-6 col-lg-6 mb-4">
+                    <div class="certificate-card">
+                        <div class="card-header">
+                            <i class="fa fa-book certificate-icon"></i>
+                            <h3>Kurszertifikate</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('kurszertifikate')">
+                                    <i class="fa fa-folder"></i>
+                                    <span>Kurszertifikate</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('militaer_zertifikate')">
+                                    <i class="fa fa-shield"></i>
+                                    <span>Militär</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                            <div class="certificate-item">
+                                <a href="#" onclick="openSecureDocument('webinar_zertifikate')">
+                                    <i class="fa fa-video-camera"></i>
+                                    <span>Webinar</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Referenzen</h3>
+                <p class="swipe-hint">
+                    <i class="fa fa-hand-o-right"></i>
+                    Wische um weitere Referenzen zu entdecken.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <i class="fa fa-lightbulb-o testimonial-header-icon"></i>
+                                <h3>Eigeninitiative</h3>
+                            </div>
+                            <div class="testimonial-content clearfix">
+                                <div class="testimonial-desc">
+                                    <i class="fa fa-quote-left quote-icon"></i>
+                                    <p class="lead">Er erfüllt seine Aufgaben zielorientiert mit hoher Eigeninitiative,
+                                        Einsatzbereitschaft. Besonders hervorzuheben sind seine fachliche Kompetenz,
+                                        sein persönliches Engagement und seine intrinsische Motivation für die Arbeit.
+                                    </p>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <img src="images/testimonials/fabian-koehler.png" class="img-fluid alignleft">
+                                    <h4>Dr. Fabian Köhler<small>Gruppenleiter Radioanalytik Rückbau @ PSI</small></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <i class="fa fa-users testimonial-header-icon"></i>
+                                <h3>Teamarbeit</h3>
+                            </div>
+                            <div class="testimonial-content clearfix">
+                                <div class="testimonial-desc">
+                                    <i class="fa fa-quote-left quote-icon"></i>
+                                    <p class="lead">Ben ist immer zuverlässig, fokussiert und motiviert bei Projekten.
+                                        Ein
+                                        echter Mehrwert für jedes Team.
+                                    </p>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <img src="images/testimonials/gabu.png" class="img-fluid alignleft">
+                                    <h4>Gabriel Gamez Torres<small>Data Scientist & Software Engineer <br> Fellow Data
+                                            Science Student</small></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <i class="fa fa-graduation-cap testimonial-header-icon"></i>
+                                <h3>Lernender</h3>
+                            </div>
+                            <div class="testimonial-content clearfix">
+                                <div class="testimonial-desc">
+                                    <i class="fa fa-quote-left quote-icon"></i>
+                                    <p class="lead">Er arbeitet sich sehr gut in unterschiedlichen Aufgabengebiete ein
+                                        und
+                                        integriert sich bestens in die verschiedenen Arbeitsgruppen.
+                                    </p>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <img src="images/testimonials/can-pinarci.png" class="img-fluid alignleft">
+                                    <h4>Can Pinarci<small>Leiter Berufsbildung @ PSI</small></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <i class="fa fa-trophy testimonial-header-icon"></i>
+                                <h3>Ausdauer & Disziplin</h3>
+                            </div>
+                            <div class="testimonial-content clearfix">
+                                <div class="testimonial-desc">
+                                    <i class="fa fa-quote-left quote-icon"></i>
+                                    <p class="lead">
+                                        An Ben bewundere ich die grosse Belastbarkeit und Ausdauer, sowie seine
+                                        Disziplin.
+                                        Er arbeitet stets mit voller Konzentration und ist immer bereit mir bei Fragen
+                                        zur
+                                        Seite zu stehen.</p>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <img src="images/testimonials/luu.png" class="img-fluid alignleft">
+                                    <h4>Lukas Zemp<small>Data Werkstudent @ Baloise <br> Fellow Data
+                                            Science Student</small></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <i class="fa fa-group testimonial-header-icon"></i>
+                                <h3>Teamorientiert</h3>
+                            </div>
+                            <div class="testimonial-content clearfix">
+                                <div class="testimonial-desc">
+                                    <i class="fa fa-quote-left quote-icon"></i>
+                                    <p class="lead">Von seinem Team wurde er als
+                                        begeisternde, kollegiale & teamorientierte Persönlichkeit wahrgenommen und
+                                        geschätzt.</p>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <img src="images/testimonials/martin-heule.png" class="img-fluid alignleft">
+                                    <h4>Dr. Martin Heule<small>Gruppenleiter Radioanalytik @ PSI</small></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Kontakt</h3>
+                <p>Vielen Dank für dein Interesse an meinem Portfolio! Ich freue mich über jede Nachricht und bin
+                    gespannt auf neue berufliche Möglichkeiten und spannende Projekte.
+                <p>Gerne können wir uns auch über <a href="https://www.linkedin.com/in/7ben18/" target="_blank"
+                        class="linkedin-link">LinkedIn</a> vernetzen und dort
+                    uns Austauschen.
+                    <br><br>
+                    📧 E-Mail: <strong>si_ben_tran@hotmail.com</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">2025 | <a href="#">Si Ben Tran | </a>
+                        <a href="https://www.linkedin.com/in/7ben18/">LinkedIn | </a>
+                        <a href="https://github.com/7ben18">GitHub | </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+
+    <!-- Camera Slider -->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/headline.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- Authentication Status Indicator -->
+    <div id="authStatus" class="auth-status">
+        <i class="fa fa-check-circle"></i>
+        <span>Portfolio entsperrt</span>
+    </div>
+
+    <!-- Master Password Modal -->
+    <div id="masterPasswordModal" class="master-modal hidden">
+        <div class="master-modal-content">
+            <div class="master-modal-header">
+                <i class="fa fa-lock master-lock-icon"></i>
+                <h3>Portfolio-Zugang</h3>
+                <p>Zugang zu CV und allen Zertifikaten</p>
+            </div>
+            <div class="master-modal-body">
+                <div class="password-input-container">
+                    <input type="password" id="masterPassword" placeholder="Master-Passwort eingeben..." maxlength="50">
+                    <div class="password-strength-indicator">
+                        <div class="strength-bar"></div>
+                    </div>
+                </div>
+                <div id="passwordError" class="error-message hidden">
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <span>Falsches Passwort! Versuche übrig: <span id="attemptsLeft">2</span></span>
+                </div>
+                <div id="lockedMessage" class="locked-message hidden">
+                    <i class="fa fa-ban"></i>
+                    <span>Zu viele Fehlversuche. Bitte lade die Seite neu.</span>
+                </div>
+            </div>
+            <div class="master-modal-footer">
+                <button id="submitPassword" class="master-submit-btn">
+                    <i class="fa fa-unlock-alt"></i>
+                    Zugang gewähren
+                </button>
+                <button id="cancelPassword" class="master-cancel-btn">
+                    <i class="fa fa-times"></i>
+                    Abbrechen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ENCRYPTED_URLS = {
+            'lehrzeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQR49GD8pKTwtaGJGBxItBDweCRsHKmtmfnM0GAQxSwwcVhpBQA9HGA4AHQgI',
+            'arbeitszeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQSglLgcoKhEcXGdaUgI3RkEIIUE+GFhFAmYBOSseMB8EVhpBQA9QAgYEETkDBQcE',
+            'letztes_arbeitszeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdJF5UcwJSSBkCJyo7CT8EdWFEexEKHjU1CzoKA0gGC2NfGRsREVAZGh8PVEBdBgotGA8BBw==',
+            'lehrzeugnis_psi': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdHw1AWwFVOTALKywoIDMcBEhAfkJfPUxTAyUGAwZgCgNfGRsREVAZGh8PVEBdBgotGA8BBw==',
+            'faehigkeitszeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdXlxTRXNyRAweLA8ALQUYWUlqQhM+GT4TNiUzBUBUYE1fGRsREVAZGh8PVEBdBgotGA8BBw==',
+            'berufsmaturitaetszeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdBwdeSXR+NwgAMycWJiAdUGZlfAMLHCYPGhokG0p2VWRfGRsREVAZGh8PVEBdBgotGA8BBw==',
+            'diplom_bsc': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdIABbBUYACloHPSc8VAYDYAZjQBIBIEA1LSU8Km1JWHpfGRsREVAZGh8PVEBdBgotGA8BBw==',
+            'ranking_bsc': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdKFdjSh8MHhkFOlcFHxAwBgNwdxsNRxU/AyADXQtxAV1fGRsREVAZGh8PVEBdBgotGA8BBw==',
+            'ehrenamtlich_bsc': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdWwp1B0NaEixAAi9aNSoXfkNVRV0kKzhXNSdQCQoDQmxfGRsREVAZGh8PVEBdBgotGA8BBw==',
+            'kurszertifikate': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQQogBxMhHERZalVHdwkmATAhCzMQGUN0U1ccOTcwEzkeVhpBQA9QAgYEETkDBQcE',
+            'webinar_zertifikate': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQR04DVIfM1ondkdjQwYFJjMBLAkiDQpTe0M+CjkVDF5ZVhpBQA9QAgYEETkDBQcE',
+            'militaer_zertifikate': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQS5BMQleXzElf1x1XQdaMwI5AB0BXEUCf1o1BTkgFUIUVhpBQA9QAgYEETkDBQcE'
+        };
+
+        function decryptUrl(encrypted, key = 'portfolio2024') {
+            const decoded = atob(encrypted);
+            let result = '';
+            for (let i = 0; i < decoded.length; i++) {
+                result += String.fromCharCode(decoded.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+            }
+            return result;
+        }
+
+        function generateEncryptedUrl(url, key = 'portfolio2024') {
+            let result = '';
+            for (let i = 0; i < url.length; i++) {
+                result += String.fromCharCode(url.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+            }
+            return btoa(result);
+        }
+
+        class MasterAuth {
+            constructor() {
+                this.seed = "835f38340c098c754be745116f02d4c2c88a990221bc1cc9ab9a5d142ae1564f";
+                this.maxAttempts = 3;
+                this.currentAttempts = 0;
+                this.isLocked = false;
+                this.pendingAction = null;
+                this.default = 'default';
+                this.initEventListeners();
+            }
+
+            async xor(message) {
+                const msgBuffer = new TextEncoder().encode(message);
+                const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+                const hashArray = Array.from(new Uint8Array(hashBuffer));
+                return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            }
+
+            initEventListeners() {
+                const modal = document.getElementById('masterPasswordModal');
+                const submitBtn = document.getElementById('submitPassword');
+                const cancelBtn = document.getElementById('cancelPassword');
+                const passwordInput = document.getElementById('masterPassword');
+
+                submitBtn.addEventListener('click', () => this.validatePassword());
+                cancelBtn.addEventListener('click', () => this.closeModal());
+
+                passwordInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' && !this.isLocked) {
+                        this.validatePassword();
+                    }
+                });
+
+                passwordInput.addEventListener('input', () => this.updatePasswordStrength());
+
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        this.closeModal();
+                    }
+                });
+            }
+
+            isAuthenticated() {
+                return sessionStorage.getItem(this.default) === '1';
+            }
+
+            requestAccess(action, params = null) {
+                if (this.isAuthenticated()) {
+                    this.executeAction(action, params);
+                    return;
+                }
+
+                this.pendingAction = { action, params };
+                this.showModal();
+            }
+
+            showModal() {
+                const modal = document.getElementById('masterPasswordModal');
+                const passwordInput = document.getElementById('masterPassword');
+
+                modal.classList.remove('hidden');
+                modal.style.display = 'flex';
+                setTimeout(() => {
+                    modal.classList.add('show');
+                    passwordInput.focus();
+                }, 10);
+
+                this.resetErrorStates();
+            }
+
+            closeModal() {
+                const modal = document.getElementById('masterPasswordModal');
+                modal.classList.remove('show');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    modal.classList.add('hidden');
+                    document.getElementById('masterPassword').value = '';
+                    this.resetErrorStates();
+                }, 300);
+                this.pendingAction = null;
+            }
+
+            async validatePassword() {
+                if (this.isLocked) return;
+
+                const passwordInput = document.getElementById('masterPassword');
+                const password = passwordInput.value.trim();
+
+                // Hash der Eingabe berechnen und mit gespeichertem Hash vergleichen
+                const inputHash = await this.xor(password);
+                if (inputHash === this.seed) {
+                    this.nothing();
+                } else {
+                    this.handleFailedAttempt();
+                }
+            }
+
+            nothing() {
+                sessionStorage.setItem(this.default, '1');
+
+                // Success animation
+                this.showSuccessAnimation();
+
+                // Update navigation button
+                this.updateNavButton();
+
+                setTimeout(() => {
+                    this.closeModal();
+                    if (this.pendingAction) {
+                        this.executeAction(this.pendingAction.action, this.pendingAction.params);
+                    }
+                }, 1500);
+            }
+
+            updateNavButton() {
+                const navButton = document.getElementById('navAuthStatus');
+                const icon = navButton.querySelector('.auth-icon');
+                const text = navButton.querySelector('.auth-text');
+
+                if (this.isAuthenticated()) {
+                    // Unlocked state
+                    navButton.classList.remove('locked');
+                    navButton.classList.add('unlocked');
+                    icon.className = 'fa fa-check-circle auth-icon';
+                    text.textContent = 'Portfolio entsperrt';
+                } else {
+                    // Locked state
+                    navButton.classList.remove('unlocked');
+                    navButton.classList.add('locked');
+                    icon.className = 'fa fa-lock auth-icon';
+                    text.textContent = 'Portfolio entsperren';
+                }
+            }
+
+            showAuthStatus() {
+                const authStatus = document.getElementById('authStatus');
+                authStatus.classList.add('show');
+
+                // Auto-hide after 5 seconds
+                setTimeout(() => {
+                    authStatus.classList.remove('show');
+                }, 5000);
+            }
+
+            handleFailedAttempt() {
+                this.currentAttempts++;
+                const attemptsLeft = this.maxAttempts - this.currentAttempts;
+
+                if (attemptsLeft > 0) {
+                    this.showError(`Falsches Passwort! Versuche übrig: ${attemptsLeft}`);
+
+                    // Shake animation
+                    const modal = document.querySelector('.master-modal-content');
+                    modal.classList.add('shake');
+                    setTimeout(() => modal.classList.remove('shake'), 500);
+
+                } else {
+                    this.lockSystem();
+                }
+
+                document.getElementById('masterPassword').value = '';
+            }
+
+            lockSystem() {
+                this.isLocked = true;
+                document.getElementById('passwordError').style.display = 'none';
+                document.getElementById('lockedMessage').style.display = 'block';
+                document.getElementById('submitPassword').disabled = true;
+                document.getElementById('masterPassword').disabled = true;
+            }
+
+            showError(message) {
+                const errorDiv = document.getElementById('passwordError');
+                errorDiv.querySelector('span').innerHTML = message;
+                errorDiv.style.display = 'block';
+            }
+
+            resetErrorStates() {
+                document.getElementById('passwordError').style.display = 'none';
+                document.getElementById('lockedMessage').style.display = 'none';
+            }
+
+            showSuccessAnimation() {
+                const modal = document.querySelector('.master-modal-content');
+                const header = document.querySelector('.master-modal-header');
+
+                modal.classList.add('success');
+                header.innerHTML = `
+                    <i class="fa fa-check-circle master-success-icon"></i>
+                    <h3>Zugang gewährt!</h3>
+                    <p>Willkommen in meinem Portfolio</p>
+                `;
+            }
+
+            updatePasswordStrength() {
+                const password = document.getElementById('masterPassword').value;
+                const strengthBar = document.querySelector('.strength-bar');
+
+                if (password.length === 0) {
+                    strengthBar.style.width = '0%';
+                    strengthBar.className = 'strength-bar';
+                } else if (password.length < 5) {
+                    strengthBar.style.width = '25%';
+                    strengthBar.className = 'strength-bar weak';
+                } else if (password.length < 10) {
+                    strengthBar.style.width = '50%';
+                    strengthBar.className = 'strength-bar medium';
+                } else {
+                    strengthBar.style.width = '100%';
+                    strengthBar.className = 'strength-bar strong';
+                }
+            }
+
+            executeAction(action, params) {
+                switch (action) {
+                    case 'downloadCV':
+                        window.location.href = "/docs/cv/Lebenslauf-SiBenTran.pdf";
+                        break;
+                    case 'openDocument':
+                        if (params && params.url) {
+                            window.open(params.url, '_blank');
+                        }
+                        break;
+                    case 'showStatus':
+                        // Just show the modal - no specific action after auth
+                        break;
+                    default:
+                        console.error('Unknown action:', action);
+                }
+            }
+        }
+
+        // Initialize Master Authentication System
+        const masterAuth = new MasterAuth();
+
+        // Check authentication status on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Update navigation button on page load
+            masterAuth.updateNavButton();
+        });
+
+        // Legacy function for CV download (now using master auth)
+        function downloadCV() {
+            masterAuth.requestAccess('downloadCV');
+        }
+
+        // Function for certificate access
+        function openSecureDocument(urlKey) {
+            if (ENCRYPTED_URLS[urlKey]) {
+                const decryptedUrl = decryptUrl(ENCRYPTED_URLS[urlKey]);
+                masterAuth.requestAccess('openDocument', { url: decryptedUrl });
+            } else {
+                console.error('URL-Key nicht gefunden:', urlKey);
+            }
+        }
+
+        // Function for navigation auth button
+        function handleAuthButtonClick() {
+            if (masterAuth.isAuthenticated()) {
+                // Already authenticated - show info or do nothing
+                showAuthInfo();
+            } else {
+                // Not authenticated - show login modal
+                masterAuth.requestAccess('showStatus');
+            }
+        }
+
+        function showAuthInfo() {
+            const authStatus = document.getElementById('authStatus');
+            authStatus.innerHTML = '<i class="fa fa-info-circle"></i><span>Portfolio bereits entsperrt</span>';
+            authStatus.classList.add('show');
+            setTimeout(() => {
+                authStatus.classList.remove('show');
+                // Reset original content
+                authStatus.innerHTML = '<i class="fa fa-check-circle"></i><span>Portfolio entsperrt</span>';
+            }, 2000);
+        }
+
+        // Owl Carousel Configuration
+        $(document).ready(function () {
+            $('.testi-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 15000,
+                nav: false,
+                dots: false,
+                smartSpeed: 1000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 1 },
+                    1000: { items: 1 }
+                }
+            });
+        });
+
+        // Anti-DevTools & Sicherheits-Maßnahmen
+        document.addEventListener('DOMContentLoaded', function () {
+            // Rechtsklick deaktivieren
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+                return false;
+            });
+
+            // F12, Strg+Shift+I, Strg+U blockieren
+            document.addEventListener('keydown', function (e) {
+                // F12
+                if (e.keyCode === 123) {
+                    e.preventDefault();
+                    return false;
+                }
+                // Strg+Shift+I (DevTools)
+                if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+                    e.preventDefault();
+                    return false;
+                }
+                // Strg+U (Quelltext anzeigen)
+                if (e.ctrlKey && e.keyCode === 85) {
+                    e.preventDefault();
+                    return false;
+                }
+                // Strg+Shift+C (Element untersuchen)
+                if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+
+            // Text-Selektion verhindern
+            document.onselectstart = function () {
+                return false;
+            };
+            document.onmousedown = function () {
+                return false;
+            };
+
+            // Console-Warnung für DevTools
+            console.log('%cSTOP!', 'color: red; font-size: 50px; font-weight: bold;');
+            console.log('%cDies ist ein Browser-Feature für Entwickler. Portfolio-Daten sind verschlüsselt geschützt.', 'color: red; font-size: 16px;');
+
+            // DevTools Detection (basic)
+            let devtools = { open: false, orientation: null };
+            setInterval(function () {
+                if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+                    if (!devtools.open) {
+                        devtools.open = true;
+                        console.clear();
+                        console.log('%cDevTools erkannt - Portfolio-Schutz aktiv', 'color: orange; font-size: 20px;');
+                    }
+                } else {
+                    devtools.open = false;
+                }
+            }, 500);
+        });
+    </script>
+
+
+</body>
+
+</html>
