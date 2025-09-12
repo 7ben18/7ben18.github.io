@@ -243,11 +243,18 @@
                                 mit einem Master-Passwort geschützt. Für den Vollzugang zu meinem Portfolio kontaktiere
                                 mich
                                 gerne unter: si_ben_tran@hotmail.com</p>
-                            <a href="#" onclick="downloadCV()" class="cv-download-btn">
-                                <i class="fa fa-download"></i>
-                                <span>Lebenslauf herunterladen</span>
-                                <i class="fa fa-lock secure-icon"></i>
-                            </a>
+                            <div class="cv-buttons-row">
+                                <a href="#" onclick="downloadCV('de')" class="cv-download-btn cv-btn-german">
+                                    <i class="fa fa-download"></i>
+                                    <span>Deutsch</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                                <a href="#" onclick="downloadCV('en')" class="cv-download-btn cv-btn-english">
+                                    <i class="fa fa-download"></i>
+                                    <span>English</span>
+                                    <i class="fa fa-lock secure-icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -287,6 +294,27 @@
                             </div>
                             <p>Für zukünftige, spannende und innovative Projekte bin ich offen und stehe auch für
                                 Kooperationen mit Unternehmen zur Verfügung.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-4 mb-4">
+                    <div class="portfolio-card">
+                        <a href="https://github.com/7ben18/bam-two-demo" target="_blank">
+                            <div class="portfolio-image">
+                                <img src="images/projekte/bamtwo.png" class="img-fluid" alt="post-img" />
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-status">Sep 2025 - Dez 2025</div>
+                                    <i class="fa fa-github portfolio-github"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h4>BAM TWO</h4>
+                                <i class="fa fa-dashboard portfolio-icon"></i>
+                            </div>
+                            <p>Das BAM ONE Demo Dashboard. Es ist noch in Entwicklung, sprich für den Monat September 2025 bis Dezember 2025.</p>
                         </div>
                     </div>
                 </div>
@@ -968,6 +996,8 @@
 
     <script>
         const ENCRYPTED_URLS = {
+            'cv_de': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQScwIzMfKyImfHFhXwYaLwIFLwcZAkZnTlp2MzQNF1YaQUAPRxgOAB0ICFYaQUAPRxgOAB0ICCVgKDZXCzMsBxVRdl8HSAJfbktzGQgfAy1AJyEJCwlm',
+            'cv_en': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQScwIzMfKyImfHFhXwYaLwIFLwcZAkZnTlp2MzQNF1YaQUAPRxgOAB0ICFYaQUAPRxgOAB0ICCVgJyxVTzM6fDZZd19fFApjTRIpBBUVKUcgIwgcBFYm',
             'lehrzeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQR49GD8pKTwtaGJGBxItBDweCRsHKmtmfnM0GAQxSwwcVhpBQA9HGA4AHQgI',
             'arbeitszeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVACBgQRSQkDBQtXQkEbQSglLgcoKhEcXGdaUgI3RkEIIUE+GFhFAmYBOSseMB8EVhpBQA9QAgYEETkDBQcE',
             'letztes_arbeitszeugnis': 'GBsGBBVVQ0YLQFlEUV4IHRsBAwlHDF1dHVIZAxdbAkBdJF5UcwJSSBkCJyo7CT8EdWFEexEKHjU1CzoKA0gGC2NfGRsREVAZGh8PVEBdBgotGA8BBw==',
@@ -1215,7 +1245,14 @@
             executeAction(action, params) {
                 switch (action) {
                     case 'downloadCV':
-                        window.location.href = "/docs/cv/Lebenslauf-SiBenTran.pdf";
+                        const lang = params && params.lang ? params.lang : 'de';
+                        const cvUrlKey = `cv_${lang}`;
+                        if (ENCRYPTED_URLS[cvUrlKey]) {
+                            const decryptedUrl = decryptUrl(ENCRYPTED_URLS[cvUrlKey]);
+                            window.open(decryptedUrl, '_blank');
+                        } else {
+                            console.error('CV URL-Key nicht gefunden:', cvUrlKey);
+                        }
                         break;
                     case 'openDocument':
                         if (params && params.url) {
@@ -1241,8 +1278,8 @@
         });
 
         // Legacy function for CV download (now using master auth)
-        function downloadCV() {
-            masterAuth.requestAccess('downloadCV');
+        function downloadCV(lang = 'de') {
+            masterAuth.requestAccess('downloadCV', { lang: lang });
         }
 
         // Function for certificate access
