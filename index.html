@@ -968,9 +968,14 @@
             <div class="master-modal-body">
                 <div class="password-input-container">
                     <input type="password" id="masterPassword" placeholder="Master-Passwort eingeben..." maxlength="50">
-                    <div class="password-strength-indicator">
-                        <div class="strength-bar"></div>
-                    </div>
+                    <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility()">
+                        <i class="fa fa-eye" id="passwordToggleIcon"></i>
+                    </button>
+                </div>
+                <div class="password-hint">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <span><strong>Tipp:</strong> Das Passwort setzt sich aus den ersten Buchstaben meiner
+                        Aktivitäten im Lebenslauf zusammen (alle kleingeschrieben)</span>
                 </div>
                 <div id="passwordError" class="error-message hidden">
                     <i class="fa fa-exclamation-triangle"></i>
@@ -1031,7 +1036,7 @@
 
         class MasterAuth {
             constructor() {
-                this.seed = "835f38340c098c754be745116f02d4c2c88a990221bc1cc9ab9a5d142ae1564f";
+                this.seed = "2f2793b7b7bea8099fc1500b4e2020330e0657273435fbc40fb9337d7fbbf21a";
                 this.maxAttempts = 3;
                 this.currentAttempts = 0;
                 this.isLocked = false;
@@ -1062,7 +1067,6 @@
                     }
                 });
 
-                passwordInput.addEventListener('input', () => this.updatePasswordStrength());
 
                 modal.addEventListener('click', (e) => {
                     if (e.target === modal) {
@@ -1119,7 +1123,11 @@
 
                 // Hash der Eingabe berechnen und mit gespeichertem Hash vergleichen
                 const inputHash = await this.xor(password);
-                if (inputHash === this.seed) {
+                const validHashes = [
+                    "2f2793b7b7bea8099fc1500b4e2020330e0657273435fbc40fb9337d7fbbf21a", // glrs3
+                    "1451226d424a52cc1ed8ac1bd6767ffaf1916122d3f79687885fe70ffe0fb591"  // grts3
+                ];
+                if (validHashes.includes(inputHash)) {
                     this.nothing();
                 } else {
                     this.handleFailedAttempt();
@@ -1223,24 +1231,6 @@
                 `;
             }
 
-            updatePasswordStrength() {
-                const password = document.getElementById('masterPassword').value;
-                const strengthBar = document.querySelector('.strength-bar');
-
-                if (password.length === 0) {
-                    strengthBar.style.width = '0%';
-                    strengthBar.className = 'strength-bar';
-                } else if (password.length < 5) {
-                    strengthBar.style.width = '25%';
-                    strengthBar.className = 'strength-bar weak';
-                } else if (password.length < 10) {
-                    strengthBar.style.width = '50%';
-                    strengthBar.className = 'strength-bar medium';
-                } else {
-                    strengthBar.style.width = '100%';
-                    strengthBar.className = 'strength-bar strong';
-                }
-            }
 
             executeAction(action, params) {
                 switch (action) {
@@ -1331,6 +1321,20 @@
                 }
             });
         });
+
+        // Password visibility toggle function
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('masterPassword');
+            const toggleIcon = document.getElementById('passwordToggleIcon');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.className = 'fa fa-eye-slash';
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.className = 'fa fa-eye';
+            }
+        }
 
         // Anti-DevTools & Sicherheits-Maßnahmen
         document.addEventListener('DOMContentLoaded', function () {
