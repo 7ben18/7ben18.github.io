@@ -242,7 +242,11 @@
                                 sind
                                 mit einem Master-Passwort geschützt. Für den Vollzugang zu meinem Portfolio kontaktiere
                                 mich
-                                gerne unter: si_ben_tran@hotmail.com</p>
+                                gerne unter: <span class="email-container email-blurred">
+                                    <span class="email-text">si_ben_tran@hotmail.com</span>
+                                    <i class="fa fa-lock email-access-icon"></i>
+                                    <span class="email-tooltip">Passwort erforderlich für E-Mail Zugang</span>
+                                </span></p>
                             <div class="cv-buttons-row">
                                 <a href="#" onclick="downloadCV('de')" class="cv-download-btn cv-btn-german">
                                     <i class="fa fa-download"></i>
@@ -913,7 +917,13 @@
                         class="linkedin-link">LinkedIn</a> vernetzen und dort
                     uns Austauschen.
                     <br><br>
-                    📧 E-Mail: <strong>si_ben_tran@hotmail.com</strong>
+                    📧 E-Mail: <strong>
+                        <span class="email-container email-blurred">
+                            <span class="email-text">si_ben_tran@hotmail.com</span>
+                            <i class="fa fa-lock email-access-icon"></i>
+                            <span class="email-tooltip">Passwort erforderlich für E-Mail Zugang</span>
+                        </span>
+                    </strong>
             </div>
         </div>
     </div>
@@ -1143,6 +1153,9 @@
                 // Update navigation button
                 this.updateNavButton();
 
+                // Update email visibility
+                this.updateEmailVisibility();
+
                 setTimeout(() => {
                     this.closeModal();
                     if (this.pendingAction) {
@@ -1168,6 +1181,36 @@
                     navButton.classList.add('locked');
                     icon.className = 'fa fa-lock auth-icon';
                     text.textContent = 'Portfolio entsperren';
+                }
+            }
+
+            updateEmailVisibility() {
+                const emailContainers = document.querySelectorAll('.email-container');
+                
+                if (this.isAuthenticated()) {
+                    // Reveal emails
+                    emailContainers.forEach(container => {
+                        container.classList.remove('email-blurred');
+                        container.classList.add('email-revealed');
+                        
+                        // Remove lock icons
+                        const lockIcon = container.querySelector('.email-access-icon');
+                        if (lockIcon) {
+                            lockIcon.style.display = 'none';
+                        }
+                    });
+                } else {
+                    // Blur emails
+                    emailContainers.forEach(container => {
+                        container.classList.remove('email-revealed');
+                        container.classList.add('email-blurred');
+                        
+                        // Show lock icons
+                        const lockIcon = container.querySelector('.email-access-icon');
+                        if (lockIcon) {
+                            lockIcon.style.display = 'inline';
+                        }
+                    });
                 }
             }
 
@@ -1265,6 +1308,9 @@
         document.addEventListener('DOMContentLoaded', function () {
             // Update navigation button on page load
             masterAuth.updateNavButton();
+            
+            // Update email visibility on page load
+            masterAuth.updateEmailVisibility();
         });
 
         // Legacy function for CV download (now using master auth)

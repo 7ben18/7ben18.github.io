@@ -1,2 +1,59 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+
+/* Email Blurring and Tooltip Styling */
+.email-container {
+    display: inline-block;
+    position: relative;
+}
+
+.email-blurred .email-text {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+    user-select: none;
+    pointer-events: none;
+}
+
+.email-revealed .email-text {
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+.email-tooltip {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.email-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+}
+
+.email-container.email-blurred:hover .email-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.email-access-icon {
+    margin-left: 8px;
+    color: #f39c12;
+    font-size: 14px;
+}
